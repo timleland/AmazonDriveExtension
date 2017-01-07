@@ -1,0 +1,16 @@
+{
+    "name": "Amazon Drive",
+    "version": "1.0.0",
+    "description": "Allow video playback over 20 minutes",
+
+    "icons": {
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.amazon.com/clouddrive/*"],
+        "js": ["js/background.js"]
+    }],
+    "manifest_version": 2,
+    "permissions": ["*://*.amazon.com/*"]
+}
