@@ -9,7 +9,7 @@
     },
     "content_scripts": [{
         "matches": ["*://*.amazon.com/clouddrive/*"],
-        "js": ["js/background.js"]
+        "js": ["js/jquery.js", "js/background.js"]
     }],
     "manifest_version": 2,
     "permissions": ["*://*.amazon.com/*"]
