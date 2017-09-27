@@ -8,9 +8,8 @@
         "128": "img/icon128.png"
     },
     "content_scripts": [{
-        "matches": ["*://*.amazon.com/clouddrive/*"],
+        "matches": ["*://*.amazon.ca/clouddrive/*", "*://*.amazon.com/clouddrive/*"],
         "js": ["js/jquery.js", "js/background.js"]
     }],
-    "manifest_version": 2,
-    "permissions": ["*://*.amazon.com/*", "*://*.amazon.ca/*"]
+    "manifest_version": 2
 }
